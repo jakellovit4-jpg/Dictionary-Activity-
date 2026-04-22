@@ -1,0 +1,36 @@
+#Activity 1
+student = {
+    "name": "Ana",
+    "age": 20,
+    "course": "IT"
+}
+
+print(student["name"])  # Should print Ana
+
+#Activity 2
+student = {"name": "Ana", "age": 20}
+
+student["grade"] = 95   # add new key-value
+student["age"] = 21     # update value
+
+print(student)
+
+#Activity 3
+car = {"brand": "Toyota", "model": "Corolla", "year": 2020}
+
+for key, value in car.items():
+    print(f"{key} : {value}")
+
+#Activity 4
+phonebook = {
+    "Ana": "09123456789",
+    "John": "09987654321",
+    "Mark": "09001234567"
+}
+
+name = input("Enter a name: ")
+
+if name in phonebook:
+    print("Number:", phonebook[name])
+else:
+    print("Name not found")
