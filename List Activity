@@ -1,0 +1,78 @@
+# 1. Basic List Activities
+
+# Activity 1: Create a List
+fruits = ["apple", "banana", "cherry"]
+print("Fruits:", fruits)
+
+
+# Activity 2: Access Items
+fruits = ["apple", "banana", "cherry"]
+print("First item:", fruits[0])
+print("Last item:", fruits[-1])
+
+
+# Activity 3: List Length
+colors = ["red", "blue", "green", "yellow"]
+print("Number of colors:", len(colors))
+
+
+# 2. Modify Lists
+
+# Activity 4: Change Item
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "orange"
+print("Updated fruits:", fruits)
+
+
+# Activity 5: Add Items
+fruits = ["apple", "banana"]
+fruits.append("mango")      # add mango
+fruits.insert(1, "grape")   # insert grape at index 1
+print("After adding:", fruits)
+
+
+# Activity 6: Remove Items
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")     # remove banana
+fruits.pop()                # remove last item
+print("After removing:", fruits)
+
+
+# 3. Looping Through Lists
+
+# Activity 7: For Loop
+animals = ["dog", "cat", "bird"]
+for animal in animals:
+    print("Animal:", animal)
+
+
+# Activity 8: With Index
+numbers = [10, 20, 30]
+for i, value in enumerate(numbers):
+    print(f"# {i} : {value}")
+
+
+# 4. List Operations
+
+# Activity 9: Check if Item Exists
+fruits = ["apple", "banana", "cherry"]
+if "banana" in fruits:
+    print("Banana is in the list")
+else:
+    print("Banana is NOT in the list")
+
+
+# Activity 10: Sorting
+numbers = [5, 2, 9, 1]
+
+numbers.sort()
+print("Ascending:", numbers)
+
+numbers.sort(reverse=True)
+print("Descending:", numbers)
+
+
+# Activity 11: Copy List
+list1 = ["a", "b", "c"]
+list2 = list1.copy()
+print("Copied list:", list2)
